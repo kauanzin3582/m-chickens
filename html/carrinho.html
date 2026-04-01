@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M Chickens - Carrinho</title>
+
+  <link rel="stylesheet" href="/css/carrinho.css">
+  <script defer src="/javascript/carrinho.js"></script>
+</head>
+
+<body>
+
+<header>
+  <img src="/img/logo m chickens simples.png" alt="Logo">
+  <nav>
+    <div class="links">
+      <a href="./index.html">Início</a>
+      <a href="./cardapio.html">Cardápio</a>
+      <a href="#">Promoções</a>
+      <a href="#">Meus Pedidos</a>
+      <a href="https://api.whatsapp.com/send?phone=5511940318625&text=Olá%20gostaria%20de%20mais%20informações!%20">Contato</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+
+    <h2>CARRINHO</h2>
+
+    <div class="header-row">
+      <p>ITEM</p>
+      <p>PREÇO</p>
+      <p>QUANTIDADE</p>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <img alt="." src="/img/asinha apimentada.jpg">
+        <p>Asinha picante</p>
+      </div>
+
+      <div class="valor">
+        <p>R$</p>
+        <p class="valor-item">22,90</p>
+      </div>
+
+      <div class="quantidade">
+        <input placeholder="." class="qtd" type="number" min="0" value="0" oninput="atualizarTotal()">
+        <button class="btn-remover">Remover</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <img alt="." src="/img/batata.jpg">
+        <p>Batata crocante</p>
+      </div>
+
+      <div class="valor">
+        <p>R$</p>
+        <p class="valor-item">38,70</p>
+      </div>
+
+      <div class="quantidade">
+        <input placeholder="." class="qtd" type="number" min="0" value="0" oninput="atualizarTotal()">
+        <button class="btn-remover">Remover</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <img alt="." src="/img/cerveja.jpg">
+        <p>Cerveja (garrafa)</p>
+      </div>
+
+      <div class="valor">
+        <p>R$</p>
+        <p class="valor-item">25,80</p>
+      </div>
+
+      <div class="quantidade">
+        <input placeholder="." class="qtd" type="number" min="0" value="0" oninput="atualizarTotal()">
+        <button class="btn-remover">Remover</button>
+      </div>
+    </div>
+
+    <div class="final">
+      <p id="Total">Total: R$ 0,00</p>
+    </div>
+
+    <button class="btn-finalizar">FINALIZAR COMPRA</button>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 Mc Chickens - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: galfont;
+    src: url("/fontes/galfont-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: galfont;
+  background: linear-gradient(135deg, #FF6B35 50%, #FF8C42 50%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  top: 0;
+}
+
+header img {
+  height: 60px;
+  cursor: pointer;
+}
+
+.links a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  font-size: large;
+  text-decoration: underline;
+  transition: 0.7s;
+  color: #000;
+}
+
+.link a{
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.link a:hover {
+  font-size: large;
+  text-decoration: underline;
+  transition: 0.7s;
+  color: #000;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+  cursor:default ;
+  width: 1100px;
+  height: auto;
+  margin-left: 190px;
+  margin-top: 45px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.menu-card:hover {
+  transform: translateY(-2px);
+}
+
+.menu-card p {
+  color: #303030;
+  font-size: 33px;
+  padding: 30px;
+}
+

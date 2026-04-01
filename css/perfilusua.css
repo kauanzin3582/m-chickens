@@ -1,0 +1,278 @@
+@font-face {
+    font-family: galfont;
+    src: url("/fontes/galfont-Regular.otf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: galfont;
+}
+
+body {
+  background: linear-gradient(135deg, #FF6B35 50%, #FF8C42 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+.perfil {
+  background: #fff;
+  border-radius: 5px;
+  width: 200px;
+  height: 280px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.perfil .usuario {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.foto img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.botao-foto {
+  background-color: #ff5e3a;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.botao-foto:hover {
+  background-color: #ff441e;
+}
+
+
+.editar {
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  width: 520px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editar h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.abas {
+  display: flex;
+  gap: 25px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.abas p {
+  font-size: 14px;
+  color: #777;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.abas .infusua {
+  border-bottom: 3px solid #ff5e3a;
+  color: #000;
+  font-weight: 600;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputs h6 {
+  font-size: 12px;
+  color: #777;
+}
+
+.nomeusuario {
+  display: flex;
+  gap: 205px;
+}
+
+.senhas {
+  display: flex;
+  gap: 203px;
+}
+
+.emails {
+  display: flex;
+  gap: 208px;
+}
+
+.nome {
+  display: flex;
+  gap: 20px;
+}
+
+.nome input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.senha {
+  display: flex;
+  gap: 15px;
+}
+
+.senha input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.email {
+  display: flex;
+  gap: 15px;
+}
+
+.email input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.ft {
+  display: flex;
+  gap: 15px;
+}
+
+.ft input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.botao-atualizar {
+  background-color: #ff5e3a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 200px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.botao-atualizar:hover {
+  background-color: #ff441e;
+}
+
+.botao-salvar {
+  background-color: #ff5e3a;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  width: 200px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.botao-salvar:hover {
+  background-color: #ff441e;
+}
+
+.botoes {
+  display: flex;
+  gap: 50px;
+}
+
+/* .inputs .senhacon {
+  position: absolute;
+  left: 875px;
+  top: 320px;
+}
+
+.inputs .usuario {
+  position: absolute;
+  left: 875px;
+  top: 249px;
+}
+
+.inputs .emailcon {
+  position: absolute;
+  left: 875px;
+  top: 391px;
+} */
+
+.lixeira {
+  position: absolute;
+  left: 490px;
+  width: 23px;
+  background-color: #ccc;
+  border-radius: 100%;
+  border: #00000075 1px solid;
+}
+
+.lixeira img {
+  width: 15px;
+  margin-top: 3px;
+}
+
+.texto-erro{
+  color: #dc0000d3;
+}
+
+.inputf {
+  background-image: url('../img/facebook.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.inputx {
+  background-image: url('../img/twitter.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.teste {
+  display: flex;
+  flex-direction: column;
+}

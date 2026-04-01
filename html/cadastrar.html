@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M Chickens - cadastro</title>
+    <script defer src="/javascript/cadastrar.js"></script>
+    <link rel="stylesheet" href="/css/cadatrar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="coisas-login">
+      <div class="pt-esquerda">
+        <div class="logotipo">M Chickens</div>
+        <a href="/html/inicio.html" class="link-voltar">Voltar para o site ></a>
+        <div class="coisas-painel">
+          <h1 class="titulo">O Sabor Que Faz a Diferença.</h1>
+        </div>
+        <div class="m-decorativo">M</div>
+      </div>
+
+      <div class="pt-direita">
+        <h2>Criar uma conta</h2>
+        <p class="login1">
+          Já tem uma conta? <a href="login.html" class="login2">Fazer login</a>
+        </p>
+
+        <br />
+        <form>
+          <div class="nome">
+            <input type="text" class="inputs" placeholder="Nome" required />
+            <input
+              type="text"
+              class="inputs"
+              placeholder="Sobrenome"
+              required
+            />
+          </div>
+
+          <input type="email" class="inputs" placeholder="E-mail" required />
+
+          <div class="senha">
+            <input
+              type="password"
+              class="inputs"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+
+          <div class="checkbox">
+            <input
+              placeholder="."
+              class="cb"
+              type="checkbox"
+              id="termos"
+              required
+            />
+            <h4>Eu concordo com os <a href="#">Termos & Condições</a></h4>
+          </div>
+
+          <button onclick="cc()" id="btconta" type="submit" class="botaocriar">
+            Criar conta
+          </button>
+        </form>
+
+        <p class="registarga">Ou registre-se com</p>
+
+        <div class="logingoogle">
+          <button class="botao-g">
+            <img src="../img/search.png" alt="" /> <span>Google</span>
+          </button>
+          <button class="botao-f">
+            <img src="../img/facebook.png" alt="" /> Facebook
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

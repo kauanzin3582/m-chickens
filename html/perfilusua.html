@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="../css/perfilusua.css" />
+    <script src="../javascript/perfilusua.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="perfil">
+        <h3>Mario Matheus</h3>
+        <p class="usuario">@mariorei</p>
+
+        <div class="lixeira">
+          <img src="../img/lixeira.png" alt="" />
+        </div>
+        <div class="foto">
+          <img src="../img/img mario.jpg" alt="Foto de perfil" />
+        </div>
+
+        <button onclick="mudartamanho()" class="botao-foto">
+          Enviar nova foto
+        </button>
+        <br />
+        <br />
+        <h5 hidden class="texto-erro">
+          Esta funcionalidade não esta disponivel no momento!
+        </h5>
+      </div>
+
+      <div class="editar">
+        <h2>Dados Perfil</h2>
+
+        <div class="abas">
+          <p class="infusua">Informações do Usuário</p>
+          <p class="infpaga">Informações de Pagamento</p>
+        </div>
+
+        <div class="inputs">
+          <div class="nomeusuario">
+          <h6>Nome</h6>
+          <h6>Usuário</h6>
+          </div>
+          <div class="nome">
+            <input
+              disabled
+              class="bt-atz"
+              type="text"
+              placeholder="Nome completo"
+              value="Mario Matheus Santos"
+            />
+            <input
+              disabled
+              class="bt-atz"
+              type="text"
+              placeholder="Nome de usuário"
+              value="mariorei"
+            />
+          </div>
+
+          <div class="teste">
+            <div class="senhas">
+              <h6>Senha</h6>
+              <h6>Senha Confirmada</h6>
+            </div>
+            <div class="senha">
+              
+              <input
+                disabled
+                class="bt-atz"
+                id="senha"
+                type="password"
+                placeholder="Senha"
+                value="********"
+              />
+              <input
+                disabled
+                class="bt-atz"
+                id="nova-senha"
+                type="password"
+                placeholder="Confirmar senha"
+                value="********"
+              />
+            </div>
+          </div>
+
+          <div class="teste">
+            <div class="emails">
+              <h6>Email</h6>
+              <h6>Email Confirmado</h6>
+            </div>
+            <div class="email">
+              <input
+                disabled
+                class="bt-atz"
+                id="email"
+                type="email"
+                placeholder="Endereço de e-mail"
+                value="mario123@mail.com"
+              />
+              <input
+                disabled
+                class="bt-atz"
+                id="novo-email"
+                type="email"
+                placeholder="Confirmar e-mail"
+                value="mario123@mail.com"
+              />
+            </div>
+          </div>
+
+          <div class="teste">
+            <h6>Contas</h6>
+            <div class="ft">
+
+              <input
+                class="inputf"
+                type="text"
+                maxlength="14"
+                placeholder="Usuário do Facebook"
+              />
+
+              <input
+                class="inputx"
+                type="text"
+                maxlength="14"
+                placeholder="Usuário do Twitter"
+              />
+            </div>
+          </div>
+
+          <div class="botoes">
+            <button onclick="atualizardados()" class="botao-atualizar">
+              Atualizar informações
+            </button>
+            <button hidden onclick="salvardados()" class="botao-salvar">
+              Salvar informações
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

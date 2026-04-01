@@ -1,0 +1,222 @@
+@font-face {
+    font-family: galfont;
+    src: url("/fontes/galfont-Regular.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: galfont;
+}
+
+body {
+    background: linear-gradient(135deg, #FF6B35 50%, #FF8C42 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.coisas-login {
+    display: flex;
+    width: 1000px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #F5F5DC; 
+    flex-wrap: wrap; 
+}
+
+.pt-esquerda {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+    background-image:linear-gradient(135deg, rgba(255,140,66,0.75), rgba(255,122,69,0.75)), url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;  
+}
+
+.logotipo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F5F5DC;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.link-voltar {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #F5F5DC;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.link-voltar:hover {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: rgba(0, 0, 0, 0.776);
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.titulo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.m-decorativo {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 150px;
+    font-weight: 900;
+    color: #F5F5DC;
+    opacity: 0.4;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.pt-direita {
+    flex: 1;
+    padding: 40px;
+    min-width: 350px;
+}
+
+.pt-direita h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.login2 {
+    color: #FFFFFF; 
+    font-weight: bold;
+}
+
+.inputs {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    background-color: #FFF5ED; 
+    border: 2px solid #F39C12; 
+    border-radius: 8px;
+    color: #2C3E50;
+    font-size: 16px;
+    outline: none;
+}
+
+.nome {
+    display: flex;
+    gap: 15px;
+}
+
+.nome .inputs {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.senha {
+    margin-bottom: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.checkbox a {
+    color: #FFFFFF;
+}
+
+.checkbox .cb {
+    margin-right: 10px;
+    accent-color: #FFFFFF; 
+}
+
+.botaocriar {
+    width: 100%;
+    padding: 15px;
+    background-color: #FFFFFF; 
+    color: #D35400;
+    border: 2px solid #D35400 ;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 25px;
+}
+
+.botaocriar:hover {
+    background-color: #fbd49a; 
+}
+
+.registarga {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+.logingoogle {
+    display: flex;
+    gap: 15px;
+}
+
+.botao-g {
+    display: flex;
+    padding: 12px 52.5px;
+    border: 1px solid #BDC3C7; 
+    background-color: #FFFFFF; 
+    border-radius: 8px;
+    color: #2C3E50;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-g:hover {
+    background-color: #fbd49a;
+    border: 2px solid #D35400;
+    transition: 0.4s;
+}
+
+.botao-f {
+    display: flex;
+    padding: 12px 52.5px;
+    border: 1px solid #BDC3C7; 
+    background-color: #FFFFFF; 
+    border-radius: 8px;
+    color: #2C3E50;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-f:hover {
+    background-color: #fbd49a;
+    border: 2px solid #D35400;
+    transition: 0.4s;
+}
