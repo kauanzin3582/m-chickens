@@ -12,5 +12,5 @@ function atualizarTotal() {
   });
 
   document.getElementById("Total").textContent =
-    "Total: R$ " + (Math.round(total * 100) / 100);
+    "Total: R$ " + (Math.round(total * 100) / 100).toFixed(2).replace(".", ",");
 }
